@@ -1,0 +1,19 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profil" />
+    <item
+        android:id="@+id/journal"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Journal" />
+    <item
+        android:id="@+id/moon"
+        android:icon="@drawable/baseline_shield_moon_24"
+        android:title="Sommeil" />
+    <item
+        android:id="@+id/articlee"
+        android:icon="@drawable/baseline_article_24"
+        android:title="Articles" />
+</menu>

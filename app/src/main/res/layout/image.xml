@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/cc">
+
+    <!-- Titre de la page Image -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisir une image"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Bouton pour choisir une image depuis la galerie -->
+    <Button
+        android:id="@+id/btnAddImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/lavender"
+        android:text="Choisir une image 🌺"
+        android:textColor="#BF360C"
+        android:textSize="16sp" />
+
+    <!-- Bouton pour enregistrer l'image -->
+    <Button
+        android:id="@+id/btnSaveImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enregistrer l'image 💖"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/black" />
+</LinearLayout>

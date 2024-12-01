@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cc"
+    android:gravity="center"
+    tools:context=".signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"> <!-- Centering the inner layout content -->
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="8dp"
+            android:hint="Nom d'utilisateur"
+            android:textColor="@color/black"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="8dp"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="S'inscrire"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="30dp" />
+
+</LinearLayout>

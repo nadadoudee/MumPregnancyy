@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="start_time" type="id" />
+    <item name="save_sleep_button" type="id" />
+    <item name="end_time" type="id" />
+    <item name="total_sleep_time" type="id" />
+    <item name="cycleProgressBar" type="id" />
+    <item name="currentDayText" type="id" />
+</resources>

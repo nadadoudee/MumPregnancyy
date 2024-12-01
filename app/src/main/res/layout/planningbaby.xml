@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cc"
+    tools:context=".CycleActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Vue personnalisée pour le cercle avec le jour actuel -->
+        <com.example.mumpregnancy.ThreeColorCircleView
+            android:id="@+id/threeColorCircle"
+            android:layout_width="251dp"
+            android:layout_height="245dp"
+            android:layout_gravity="center" />
+
+        <!-- Champ de saisie pour la durée du cycle -->
+        <EditText
+            android:id="@+id/cycleLengthInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Durée du cycle (jours)"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Affichage du nombre de jours jusqu'à la prochaine période -->
+        <TextView
+            android:id="@+id/nextPeriodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prochaine période dans :"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- ProgressBar pour afficher la progression du cycle -->
+        <!-- Par défaut, max à 28 jours -->
+
+        <!-- Bouton pour sélectionner la date de début -->
+        <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner la date de début"
+            android:layout_marginTop="16dp" />
+
+        <!-- Bouton pour ouvrir l'article -->
+        <Button
+            android:id="@+id/openArticleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voir les articles"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomAppBar"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp">
+
+        <!-- Bottom Navigation View -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- FloatingActionButton centered in the BottomAppBar -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/pinky"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

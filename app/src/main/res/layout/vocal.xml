@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/cc">
+
+    <!-- Titre de la page Message vocal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer un message vocal"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Bouton pour enregistrer un message vocal -->
+    <Button
+        android:id="@+id/btnRecordVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ajouter un message vocal 🎤"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Bouton pour arrêter l'enregistrement -->
+    <Button
+        android:id="@+id/btnStopRecording"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Arrêter l'enregistrement"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:enabled="false" />
+
+    <!-- Bouton pour enregistrer le message vocal -->
+    <Button
+        android:id="@+id/btnSaveVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enregistrer le message vocal 💐"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:enabled="false" />
+</LinearLayout>

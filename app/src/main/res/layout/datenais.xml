@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/cc">
+
+    <!-- Titre principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Quelle est la date de naissance de votre enfant?"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nous utiliserons ces informations pour donner des recommandations adaptées à l'âge"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Champ de saisie de la date -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="19 novembre 2024"
+        android:focusable="false"
+        android:inputType="none"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_gravity="center"/>
+
+    <!-- Bouton suivant -->
+    <Button
+        android:id="@+id/btnSuivant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUIVANT"
+        android:textColor="@android:color/black"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/cc">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Choose your life stage:"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!-- Espacement -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Option 1: I have a Baby -->
+    <Button
+        android:id="@+id/iHaveBabyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="I have a Baby"
+        android:drawableLeft="@drawable/baseline_child_care_24"
+        android:drawablePadding="12dp"
+        android:padding="16dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Option 2: I am already pregnant -->
+    <Button
+        android:id="@+id/alreadyPregnantButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="I am already pregnant"
+        android:drawableLeft="@drawable/baseline_pregnant_woman_24"
+        android:drawablePadding="12dp"
+        android:padding="16dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <!-- Option 3: I am planning for pregnancy -->
+    <Button
+        android:id="@+id/planningPregnancyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="I am planning for pregnancy"
+        android:drawableLeft="@drawable/baseline_child_friendly_24"
+        android:drawablePadding="12dp"
+        android:padding="16dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+</LinearLayout>

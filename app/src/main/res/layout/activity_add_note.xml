@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/cc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter une note d'humeur"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/noteInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre note ici"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/pinkouch"
+        android:textColor="@android:color/white" />
+</LinearLayout>

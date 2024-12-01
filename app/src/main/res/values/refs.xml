@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="progress_ovulation_beige" />
+    <drawable name="progress_fertile_yellow" />
+    <drawable name="progress_period_rose" />
+    <drawable name="progress_default" />
+</resources>

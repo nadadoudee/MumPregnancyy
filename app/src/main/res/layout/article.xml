@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cc"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Titre de la page -->
+        <TextView
+            android:id="@+id/page_title"
+            android:text="Articles pour tomber enceinte"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <!-- Liste des articles -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Article 1 -->
+            <Button
+                android:id="@+id/article1"
+                android:text="Article 1 : Le rôle du stress dans la fertilité"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 2 -->
+            <Button
+                android:id="@+id/article2"
+                android:text="Article 2 : L'alimentation pour favoriser la conception"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 3 -->
+            <Button
+                android:id="@+id/article3"
+                android:text="Article 3 : Le rôle de la vitamine C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 4 -->
+            <Button
+                android:id="@+id/article4"
+                android:text="Article 4 : Gérer son poids pour améliorer la fertilité"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

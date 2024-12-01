@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/cc"
+
+    tools:context=".babyname">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Comment s'appelle votre bébé?"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextBabyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:hint="Nom"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnExistingProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J'AI DÉJÀ UN PROFIL BÉBÉ"
+        android:textColor="@color/black"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/button_nouveau_bebe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nouveau bébé"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En continuant, vous acceptez les Conditions et la Politique de confidentialité"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

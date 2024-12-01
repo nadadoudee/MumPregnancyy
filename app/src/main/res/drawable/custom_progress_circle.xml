@@ -1,0 +1,51 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background gris clair -->
+    <item>
+        <shape android:shape="ring"
+            android:thicknessRatio="16"
+            android:innerRadiusRatio="3">
+            <solid android:color="#E0E0E0" />
+        </shape>
+    </item>
+
+    <!-- Partie Règles (Rose) -->
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="50">
+            <shape android:shape="ring"
+                android:thicknessRatio="16"
+                android:innerRadiusRatio="3">
+                <solid android:color="#F48FB1" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Partie Ovulation (Beige) -->
+    <item>
+        <rotate
+            android:fromDegrees="50"
+            android:toDegrees="150">
+            <shape android:shape="ring"
+                android:thicknessRatio="16"
+                android:innerRadiusRatio="3">
+                <solid android:color="#FFDAB9" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Partie Fertilité (Jaune) -->
+    <item>
+        <rotate
+            android:fromDegrees="150"
+            android:toDegrees="360">
+            <shape android:shape="ring"
+                android:thicknessRatio="16"
+                android:innerRadiusRatio="3">
+                <solid android:color="#FFF176" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

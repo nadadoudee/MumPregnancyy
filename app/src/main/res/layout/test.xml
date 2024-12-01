@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- EditText pour le titre -->
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:hint="Titre"
+        android:minHeight="48dp" />
+
+    <!-- EditText pour le contenu de la note -->
+    <EditText
+        android:id="@+id/noteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Contenu"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <!-- Bouton pour sauvegarder la note -->
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sauvegarder"
+        android:layout_below="@id/noteContent"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Conteneur pour afficher les sticky notes -->
+    <LinearLayout
+        android:id="@+id/stickyNotesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/saveNoteButton"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

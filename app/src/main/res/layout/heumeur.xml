@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisis ton humeur"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Mise en forme améliorée des boutons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnHeureux"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😊 Heureux"
+                android:tag="heureux"
+                android:onClick="onEmojiClick"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/pinkouch"
+                android:textColor="@android:color/white"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnTriste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😢 Triste"
+                android:tag="triste"
+                android:onClick="onEmojiClick"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/pinkouch"
+                android:textColor="@android:color/white"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnAffame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="😋 Affamé"
+                android:tag="affame"
+                android:onClick="onEmojiClick"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/pinkouch"
+                android:textColor="@android:color/white"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnFatiguee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="onEmojiClick"
+                android:backgroundTint="@color/pinkouch"
+                android:padding="10dp"
+                android:tag="fatiguee"
+                android:text="😴 Fatigué"
+                android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajoutez vos Heumeur"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cc"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Titre de la page -->
+        <TextView
+            android:id="@+id/page_title"
+            android:text="Articles pour la bonne santé de bébé"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <!-- Liste des articles -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Article 1 -->
+            <Button
+                android:id="@+id/article1"
+                android:text="Article 1 : Les bases d'une alimentation équilibrée"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
+
+            <!-- Article 2 -->
+            <Button
+                android:id="@+id/article2"
+                android:text="Article 2 : L'importance des vaccins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
+
+            <!-- Article 3 -->
+            <Button
+                android:id="@+id/article3"
+                android:text="Article 3 : Les routines de sommeil idéales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
+
+            <!-- Article 4 -->
+            <Button
+                android:id="@+id/article4"
+                android:text="Article 4 : Les signes de croissance saine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/cc">
+
+    <!-- Titre de la page Journal -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Journal"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Zone de texte pour écrire des mémoires -->
+    <EditText
+        android:id="@+id/edtMemory"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="My memory"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cardview_dark_background"
+        android:gravity="top|start"
+        android:inputType="textMultiLine" />
+
+    <!-- Bouton pour enregistrer la mémoire -->
+    <Button
+        android:id="@+id/btnSaveMemory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enregistrer le message 🌸"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+        />
+
+    <!-- Accès pour intégrer une vidéo -->
+    <Button
+        android:id="@+id/btnAddVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ajouter une vidéo 🎥"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+        />
+
+    <!-- Bouton pour enregistrer la vidéo -->
+    <Button
+        android:id="@+id/btnSaveVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enregistrer la vidéo 🌼"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+        />
+
+    <!-- Accès pour intégrer une image depuis la galerie -->
+    <Button
+        android:id="@+id/btnAddImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/lavender"
+        android:text="Choisir une image 🌺"
+        android:textColor="#BF360C"
+        android:textSize="16sp" />
+
+    <!-- Bouton pour enregistrer l'image -->
+    <Button
+        android:id="@+id/btnSaveImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enregistrer l'image 💖"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+        />
+
+    <!-- Accès pour enregistrer un message vocal -->
+    <Button
+        android:id="@+id/btnRecordVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enregistrer un message vocal 🎤"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+        />
+
+    <!-- Bouton pour enregistrer le message vocal -->
+    <Button
+        android:id="@+id/btnSaveVoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enregistrer le vocal 💐"
+        android:textColor="@android:color/white"
+
+        android:textSize="16sp"
+
+        />
+
+</LinearLayout>

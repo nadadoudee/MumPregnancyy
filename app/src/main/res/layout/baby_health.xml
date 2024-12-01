@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cc"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Title of the page -->
+        <TextView
+            android:id="@+id/page_title"
+            android:text="Articles sur la santé des bébés et leurs soins"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+        <!-- List of articles -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Article 1 -->
+            <Button
+                android:id="@+id/article1"
+                android:text="Article 1 : L'alimentation idéale pour votre bébé"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 2 -->
+            <Button
+                android:id="@+id/article2"
+                android:text="Article 2 : La vaccination de votre bébé : Ce qu'il faut savoir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 3 -->
+            <Button
+                android:id="@+id/article3"
+                android:text="Article 3 : Les meilleurs conseils pour un sommeil sain chez bébé"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 4 -->
+            <Button
+                android:id="@+id/article4"
+                android:text="Article 4 : Les soins de la peau de bébé : Conseils pratiques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <!-- Article 5 -->
+            <Button
+                android:id="@+id/article5"
+                android:text="Article 5 : Les premiers signes de maladie chez bébé à surveiller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

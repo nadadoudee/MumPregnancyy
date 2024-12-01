@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/cc"
+    android:gravity="center"> <!-- Centre tout le contenu -->
+
+    <!-- Titre principal -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qu'est-ce qui est le plus important pour vous ?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" /> <!-- Centre le texte horizontalement -->
+
+    <!-- Bouton 1 -->
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Me former sur les habitudes naturelles du bébé"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center" /> <!-- Centre le texte du bouton -->
+
+    <!-- Bouton 2 -->
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connaître l'heure de la prochaine tétée du bébé"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <!-- Bouton 3 -->
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tenir un journal de la croissance de bébé"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <!-- Bouton 4 -->
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faire dormir mon bébé au meilleur moment"
+        android:layout_marginBottom="12dp"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <!-- Bouton 5 -->
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer des données de santé"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <!-- Bouton Submit -->
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/piink"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="#0288D1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

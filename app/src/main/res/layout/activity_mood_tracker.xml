@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cc">
+
+    <!-- Title of the page -->
+    <TextView
+        android:id="@+id/mood_tracker_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="C'est le mood de ton bébé aujourd'hui !!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Mood selection options -->
+    <LinearLayout
+        android:id="@+id/mood_options"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/mood_tracker_title"
+        android:layout_marginBottom="20dp"
+        android:weightSum="4">
+
+        <!-- Mood Option 1: Happy -->
+        <Button
+            android:id="@+id/mood_happy"
+            android:text="😊 Heureux"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_green"/>
+
+        <!-- Mood Option 2: Sad -->
+        <Button
+            android:id="@+id/mood_sad"
+            android:text="😢 Triste"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_blue"/>
+
+        <!-- Mood Option 3: Hungry -->
+        <Button
+            android:id="@+id/mood_hungry"
+            android:text="🍽 Affamé"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_orange"/>
+
+        <!-- Mood Option 4: Sleepy -->
+        <Button
+            android:id="@+id/mood_sleepy"
+            android:text="😴 Fatigué"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_yellow"/>
+    </LinearLayout>
+
+    <!-- Additional Mood Options (Newly added) -->
+    <LinearLayout
+        android:id="@+id/extra_mood_options"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/mood_options"
+        android:layout_marginBottom="20dp"
+        android:weightSum="4">
+
+        <!-- Mood Option 5: Excited -->
+        <Button
+            android:id="@+id/mood_excited"
+            android:text="😆 Excité"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_red"/>
+
+        <!-- Mood Option 6: Anxious -->
+        <Button
+            android:id="@+id/mood_anxious"
+            android:text="😬 Anxieux"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_purple"/>
+
+        <!-- Mood Option 7: Curious -->
+        <Button
+            android:id="@+id/mood_curious"
+            android:text="🤔 Curieux"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_blue_green"/>
+
+        <!-- Mood Option 8: Grumpy -->
+        <Button
+            android:id="@+id/mood_grumpy"
+            android:text="😡 Grognon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/pastel_gray"/>
+    </LinearLayout>
+
+    <!-- Textbox for additional notes -->
+    <EditText
+        android:id="@+id/notes_field"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Notes supplémentaires (comportement, événements)"
+        android:layout_below="@id/extra_mood_options"
+        android:gravity="top|start"
+        android:textColor="@color/white"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_mood_button"
+        android:text="Enregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notes_field"
+        android:backgroundTint="@color/green"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
